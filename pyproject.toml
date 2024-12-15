@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "arc"
+version = "0.1.0"
+description = "flask arc app"
+authors = ["zeefeerkee <finekii@vk.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.1.0"
+pyserial = "^3.5"
+opencv-python = "^4.10"
+uvicorn="^0.33"
+asgiref = "^3.8.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10"
+pytest = "^8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

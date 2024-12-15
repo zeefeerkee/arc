@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      args:
+        INSTALL_DEV: "false"  # Возможность использования DEV
+    ports:
+      - "5000:5000"  # Линк портов
+    volumes:
+      - .:/app  # Рабочая директория
+    environment:
+      FLASK_ENV: development
+      FLASK_APP: app/main.py
