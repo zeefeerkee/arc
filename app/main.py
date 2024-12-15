@@ -8,7 +8,8 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-asgi_app = WsgiToAsgi(app) 
+
+asgi_app = WsgiToAsgi(app)
 
 if __name__ == "__main__":
     app.run()  # Это только для локального запуска, не используется в Docker
